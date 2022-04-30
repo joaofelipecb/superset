@@ -16,4 +16,4 @@ helm dependency build information/helm/repository/superset/superset/
 rm -fR tmp
 # after the bug be corrected, delete the workaround
 # and uncomment this line
-helm pull superset/superset --untar --untardir information/helm/repository/superset
+# helm pull superset/superset --untar --untardir information/helm/repository/superset
