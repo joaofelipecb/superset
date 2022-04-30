@@ -1,0 +1,9 @@
+- name: Start
+  hosts: localhost
+  tasks:
+  - name: Install Superset Using Helm
+    kubernetes.core.helm:
+      name: superset
+      chart_ref: ../../helm/repository/superset/superset
+      release_namespace: superset
+      create_namespace: true

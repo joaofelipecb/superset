@@ -1,0 +1,10 @@
+- name: Stop
+  hosts: localhost
+  tasks:
+  - name: Uninstall Superset Using Helm
+    kubernetes.core.helm:
+      state: absent
+      name: superset
+      chart_ref: ../../helm/repository/superset/superset
+      release_namespace: superset
+      create_namespace: true
