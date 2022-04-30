@@ -3,6 +3,7 @@ helm repo add superset https://apache.github.io/superset
 rm -R information/helm/repository/superset/superset/
 # this workaround is necessary due some bug
 # in the version 0.6.0
+# (https://github.com/apache/superset/issues/19909)
 echo "IMPORTANT: Using a workaround due bug in version 0.6.0 of helm chart of superset"
 mkdir -p tmp
 git clone https://github.com/apache/superset.git tmp/superset
